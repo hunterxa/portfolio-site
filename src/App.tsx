@@ -8,10 +8,10 @@ import ContactContent from './components/ContactContent'
 
 function App() {
 
-  const homeRef = React.useRef(null)
-  const skillsRef = React.useRef(null)
-  const projectsRef = React.useRef(null)
-  const contactRef = React.useRef(null)
+  const homeRef = React.useRef<HTMLDivElement>(null)
+  const skillsRef = React.useRef<HTMLDivElement>(null)
+  const projectsRef = React.useRef<HTMLDivElement>(null)
+  const contactRef = React.useRef<HTMLDivElement>(null)
 
   return (
     <div className="">

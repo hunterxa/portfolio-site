@@ -2,9 +2,9 @@ import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineMail } from 'react-icons/a
 
 export default function MainContent({skillsRef, projectsRef, contactRef}: 
   {
-    skillsRef: React.MutableRefObject<null>, 
-    projectsRef: React.MutableRefObject<null>, 
-    contactRef: React.MutableRefObject<null>
+    skillsRef: React.RefObject<HTMLDivElement>, 
+    projectsRef: React.RefObject<HTMLDivElement>, 
+    contactRef: React.RefObject<HTMLDivElement>
   }) {
   return (
     <>
@@ -29,19 +29,31 @@ export default function MainContent({skillsRef, projectsRef, contactRef}:
         <div className="text-xl sm:text-2xl mt-16 sm:mt-0 flex flex-col gap-4">
           <h2 
             className="text-blue-50 transition ease-in-out duration-150 sm:hover:scale-150 hover:underline border-solid border-l border-orange-300 pl-4 cursor-pointer"
-            onClick={() => skillsRef.current.scrollIntoView({behavior: 'smooth'})}
+            onClick={() => {
+              if (skillsRef.current) {
+                skillsRef.current.scrollIntoView({behavior: 'smooth'})
+              }
+            }}
           >
             Skills
           </h2>
           <h2 
             className="text-blue-50 transition ease-in-out duration-150 sm:hover:scale-150 hover:underline border-solid border-l border-orange-300 pl-4 cursor-pointer"
-            onClick={() => projectsRef.current.scrollIntoView({behavior: 'smooth'})}
+            onClick={() => {
+              if (projectsRef.current) {
+                projectsRef.current.scrollIntoView({behavior: 'smooth'})
+              }
+            }}
           >
             Projects
           </h2>
           <h2 
             className="text-blue-50 transition ease-in-out duration-150 sm:hover:scale-150 hover:underline border-solid border-l border-orange-300 pl-4 cursor-pointer"
-            onClick={() => contactRef.current.scrollIntoView({behavior: 'smooth'})}
+            onClick={() => {
+              if (contactRef.current) {
+                contactRef.current.scrollIntoView({behavior: 'smooth'})
+              }
+            }}
           >
             Contact
           </h2>
