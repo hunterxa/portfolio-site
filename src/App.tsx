@@ -29,7 +29,7 @@ function App() {
         </div>
 
         {/* Projects Content */}
-        <div ref={projectsRef} className="min-h-screen pt-24 sm:pt-48">
+        <div ref={projectsRef} className="min-h-screen pt-24 sm:pt-40">
           <ProjectsContent />
         </div>
 

@@ -20,7 +20,7 @@ export default function MainContent({skillsRef, projectsRef, contactRef}:
         </a>
       </div>
 
-      <div className="sm:flex justify-between pl-16 pr-16 mt-32 sm:mt-96">
+      <div className="sm:flex justify-between pl-16 pr-16 mt-32 sm:mt-80">
         <div className="border-solid border-l border-yellow-200 pl-2">
           <h1 className="font-sans text-4xl sm:text-6xl text-blue-50">Hunter Allen</h1>
           <p className=" w-48 sm:w-56 md:w-68 lg:w-1/2  text-blue-50 font-extralight mt-4">I'm a full stack developer from Tuscaloosa, Alabama. I'm currently focused on building creative full stack web applications.</p>
