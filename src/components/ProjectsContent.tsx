@@ -8,11 +8,16 @@ export default function ProjectsContent() {
       <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-12">
         <div className="bg-blue-50 p-4 w-80 rounded-lg mt-16">
           <div className="flex flex-col bg-[#638591] p-4 rounded-lg">
-            <img 
-            src={designConvertImage}
-              className="rounded-lg w-72 drop-shadow-lg"
-            />
-            <h2 className="text-blue-50 font-bold underline mt-4">Design Convert</h2>
+            <a href="https://design-convert.tokyrios.com">
+              <img 
+                src={designConvertImage}
+                className="rounded-lg w-72 drop-shadow-lg"
+              />
+            </a>
+            <a href="https://design-convert.tokyrios.com" 
+              className="text-blue-50 font-bold underline mt-4">
+                Design Convert
+            </a>
             <p>
               Design Convert is a utility web app that quickly converts px units to rem and vice versa. It allows for saving those conversions to quickly access later. It also allows for saving multiple projects in which you may be using different base font sizes.
               Design Convert was built using React with Typescript.
@@ -22,7 +27,7 @@ export default function ProjectsContent() {
         <div className="bg-blue-50 p-4 rounded-lg mt-16">
           <div className="flex bg-[#638591] p-4 rounded-lg items-center">
             <img 
-            src={prayTogetherImage}
+              src={prayTogetherImage}
               className="rounded-lg h-52 drop-shadow-lg"
             />
             <div className="flex flex-col w-48 sm:w-64 ml-4">
