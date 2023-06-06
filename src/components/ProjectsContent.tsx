@@ -1,12 +1,37 @@
 import { AiOutlineGithub } from 'react-icons/ai'
 import designConvertImage from '../assets/designconvert.png'
 import prayTogetherImage from '../assets/praytogether.png'
+import paletteAIImage from '../assets/paletteai.png'
 
 export default function ProjectsContent() {
   return (
     <div className="text-blue-50 flex flex-col items-center">
       <h1 className="underline text-5xl">Projects</h1>
       <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-12">
+        <div className="bg-blue-50 p-4 w-80 rounded-lg mt-16">
+          <div className="flex flex-col bg-[#638591] p-4 rounded-lg">
+            <a href="https://palette-o0ysc71uy-hunterxa.vercel.app">
+              <img 
+                src={paletteAIImage}
+                className="rounded-lg w-72 drop-shadow-lg"
+              />
+            </a>
+            <a 
+              href="https://palette-o0ysc71uy-hunterxa.vercel.app" 
+              className="text-blue-50 font-bold underline mt-4">
+                Palette AI
+            </a>
+            <p>
+              Palette AI is a web application that uses AI to quickly generate color palettes. Palette AI was built using Svelte with Typescript. The backend uses the Sveltekit Node.js server and the OpenAI API.
+            </p>
+            <a
+              className="ml-auto" 
+              href="https://github.com/hunterxa/palette-ai"
+            >
+              <AiOutlineGithub color="#E6F5FF" size="2rem"/>
+            </a>
+          </div>
+        </div>
         <div className="bg-blue-50 p-4 w-80 rounded-lg mt-16">
           <div className="flex flex-col bg-[#638591] p-4 rounded-lg">
             <a href="https://design-convert.tokyrios.com">
